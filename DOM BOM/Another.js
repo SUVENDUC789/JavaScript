@@ -12,3 +12,8 @@ decrement.addEventListener('click', () => {
     vol--;
     heading.innerHTML = 'Volume down ' + vol + ' '
 });
+
+
+document.getElementById('alert').addEventListener('click', function () {
+    alert('I am Suvendu Chowdhury');
+});
