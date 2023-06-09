@@ -4,13 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dom</title>
+    <title>DOM</title>
 </head>
 <body>
-    <p id="text">Hello world</p>
-    <button id="copy-text-btn">copy</button>
-    <!-- <button onclick="alert('I am Suvendu Chowdhury')" id="alert">Alert</button> -->
+    <div id="header" style="color: red; background: #9b7fe7;">
+       <b> this is header</b>
+    </div>
 </body>
-<!-- <script src="DOM BOM/Another.js"></script> -->
-<script src="/Copy-to-clipbord/index.js"></script>
+<script>
+    document.getElementById("header").innerText="Now i am Seek"
+    document.getElementById("header").innerHTML="<b>Now i am Seek 2<b>"
+    let a = document.getElementById("header").innerText;
+    console.log(a);
+
+    let b = document.getElementById("header").getAttribute("style");
+    console.log(b);
+
+    console.log(document.getElementById("header").getAttributeNode("style"))
+    console.log(document.getElementById("header").getAttributeNode("style").value)
+    console.log(document.getElementById("header").innerHTML)
+</script>
 </html>
